@@ -21,12 +21,14 @@ h1 {
     clear: both;
     padding: 16px;
     font-weight: bold;
+    text-shadow: 3px 3px #212121;
 }
 h2 {
     font-size: 1em;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: white;
+    text-shadow: .04em .04em #212121;
 
 }
 h3 {
@@ -91,7 +93,7 @@ li {
     text-align: center;
 }
 nav a {
-    padding: 10px 40px;
+    padding: 4px 35px;
     color: white;
     text-decoration: none;
     position: inherit;
@@ -114,7 +116,7 @@ article {
 nav a:hover {
     color: white;
     background-color: #e74c3c;
-    height: .8em;
+    height: 1em;
     font-weight: bolder;
 }
 a:hover {

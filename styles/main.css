@@ -42,18 +42,18 @@ p {
 
 body {
     font-size: 1em;
-    background-color: #e74c3c;
+    background-color: #212121;
 }
 .headerdiv {
     width: 100%;
-    background-color: #e74c3c;
+    background-color: #212121;
     height: 20%;
     border-radius: 0px;
 
 }
 #left {
     width: 50%;
-    background-color: #f39c12;
+    background: url('http://i.imgur.com/iykavmv.jpg');
     height: 60%;
     float: left;
     font-family: 'Lobster', cursive;
@@ -62,12 +62,22 @@ body {
     margin-top: .7em;
     margin-bottom: 1.2em;
 }
-#left:hover {
-    background: ('newpage.html');
+
+/*#right:hover {
+     background: url('http://i.imgur.com/oeIalov.jpg');
+     background-size: cover;
+    
 }
+#left:hover {
+    background: url('http://i.imgur.com/iykavmv.jpg');
+    background-size: cover;
+
+}
+*/
 #right {
     width: 50%;
-    background-color: #3498db;
+    background: url('http://i.imgur.com/oeIalov.jpg');
+    background-size: cover;
     height: 60%;
     float: left;
     font-family: 'Lobster', cursive;
@@ -79,7 +89,7 @@ body {
 footer {
     width: 100%;
     height: 2em;
-    background-color: #1abc9c;
+    background-color: #424242;
     clear: both;
 /*    position: fixed;
 */    text-align: center;
@@ -98,7 +108,7 @@ nav {
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     height: 1.4em;
-    background-color: #1abc9c;
+    background-color: #424242;
     text-align: center;
 }
 li {
@@ -128,12 +138,12 @@ section  {
 }
 nav a:hover {
     color: white;
-    background-color: #e74c3c;
+    background-color: #212121;
     height: 1em;
     font-weight: bolder;
 }
 a:hover {
-    color: #212121;
+    color: white;
     font-weight: bolder;
     width: 50%;
 }

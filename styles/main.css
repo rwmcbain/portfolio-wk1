@@ -31,15 +31,25 @@ h2 {
     text-shadow: .04em .04em #212121;
 
 }
+
 h3 {
     font-size: 1em;
 }
+
 p {
     font-size: 1em;
 }
+
 body {
     font-size: 1em;
     background-color: #e74c3c;
+}
+.headerdiv {
+    width: 100%;
+    background-color: #e74c3c;
+    height: 20%;
+    border-radius: 0px;
+
 }
 #left {
     width: 50%;
@@ -47,18 +57,21 @@ body {
     height: 60%;
     float: left;
     font-family: 'Lobster', cursive;
-    border-radius: 70px;
+    border-radius: 0px;
     font-size: 3em;
     margin-top: .7em;
     margin-bottom: 1.2em;
+}
+#left:hover {
+    background: ('newpage.html');
 }
 #right {
     width: 50%;
     background-color: #3498db;
     height: 60%;
-    float: right;
+    float: left;
     font-family: 'Lobster', cursive;
-    border-radius: 70px;
+    border-radius: 0px;
     font-size: 3em;
     margin-top: .7em;
     margin-bottom: 1.2em;
@@ -68,16 +81,16 @@ footer {
     height: 2em;
     background-color: #1abc9c;
     clear: both;
-    position: inherit;
-    text-align: center;
+/*    position: fixed;
+*/    text-align: center;
     font-family: 'Raleway', sans-serif;
-    margin-top: 5em;
+    margin-top: 39%;
     padding: 1px;
     padding-top: 8px;
     font-weight: bold;
     color: white;
-    vertical-align: middle;
-}
+/*    vertical-align: middle;
+*/}
 nav {
     font-size: 1.2em;
     padding: 0;
@@ -100,11 +113,11 @@ nav a {
 }
 a {
     font-size: .8em;
-    color: #212121;
+    color: white;
     text-decoration: none;
 
 }
-article {
+section  {
     padding-top: 160px;
     padding-left: 40px;
     padding-right: 40px;
@@ -124,3 +137,48 @@ a:hover {
     font-weight: bolder;
     width: 50%;
 }
+.fade-in.one {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  animation-delay: .1s;
+}
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  
+  -webkit-animation:fadeIn ease-in 1; 
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards; value (opacity: 1)
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+@media all and (max-width : 650px) {
+
+div#left, div#right{
+    width: 100%;
+    margin: 0;
+}
+}
+@media all and (max-width : 768px) {
+
+div#left, div#right{
+    width: 100%;
+    margin: 0;
+}
+}
+
